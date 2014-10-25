@@ -2,8 +2,8 @@
   <remove-node path="/api/package[starts-with(@name, 'com.actionbarsherlock.internal')]" />
   
   <!-- Canonicalize the Java package names -->
-  <attr path="/api/package[@name='com.actionbarsherlock']" name="managedName">Xamarin.ActionbarSherlockBinding</attr>
-  <attr path="/api/package[@name='com.actionbarsherlock.widget']" name="managedName">Xamarin.ActionbarSherlockBinding.Widget</attr>
-  <attr path="/api/package[@name='com.actionbarsherlock.app']" name="managedName">Xamarin.ActionbarSherlockBinding.App</attr>
-  <attr path="/api/package[@name='com.actionbarsherlock.view']" name="managedName">Xamarin.ActionbarSherlockBinding.Views</attr>
+  <attr path="/api/package[@name='com.actionbarsherlock']" name="managedName">Xamarin.ActionBarSherlock</attr>
+  <attr path="/api/package[@name='com.actionbarsherlock.widget']" name="managedName">Xamarin.ActionBarSherlock.Widget</attr>
+  <attr path="/api/package[@name='com.actionbarsherlock.app']" name="managedName">Xamarin.ActionBarSherlock.App</attr>
+  <attr path="/api/package[@name='com.actionbarsherlock.view']" name="managedName">Xamarin.ActionBarSherlock.Views</attr>
 </metadata>
