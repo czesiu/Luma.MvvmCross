@@ -2,6 +2,7 @@ using System;
 using Android.App;
 using Android.Content;
 using Android.OS;
+using Android.Runtime;
 using Cirrious.CrossCore.Core;
 using Cirrious.CrossCore.Droid.Views;
 using Xamarin.ActionBarSherlock.App;
@@ -10,6 +11,7 @@ namespace Luma.MvvmCross.ActionBarSherlock
 {
     public abstract class MvxEventSourceSherlockFragmentActivity : SherlockFragmentActivity, IMvxEventSourceActivity
     {
+        //protected MvxEventSourceSherlockFragmentActivity(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer) { }
         protected override void OnCreate(Bundle bundle)
         {
             CreateWillBeCalled.Raise(this, bundle);

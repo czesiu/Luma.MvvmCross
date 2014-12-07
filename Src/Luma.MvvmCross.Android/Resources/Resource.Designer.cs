@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("Luma.MvvmCross.ActionBarSherlock.Resource", IsApplication=false)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("Luma.MvvmCross.Resource", IsApplication=false)]
 
-namespace Luma.MvvmCross.ActionBarSherlock
+namespace Luma.MvvmCross
 {
 	
 	
@@ -173,6 +173,9 @@ namespace Luma.MvvmCross.ActionBarSherlock
 			
 			// aapt resource value: 0x7f010056
 			public static int itemTextAppearance = 2130772054;
+			
+			// aapt resource value: 0x7f010062
+			public static int label = 2130772066;
 			
 			// aapt resource value: 0x7f010045
 			public static int listPopupWindowStyle = 2130772037;
@@ -815,6 +818,12 @@ namespace Luma.MvvmCross.ActionBarSherlock
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f040033
+			public static int DataFormContent = 2130968627;
+			
+			// aapt resource value: 0x7f040032
+			public static int DataFormLabel = 2130968626;
+			
 			// aapt resource value: 0x7f040020
 			public static int abs__action_bar = 2130968608;
 			
@@ -1058,10 +1067,13 @@ namespace Luma.MvvmCross.ActionBarSherlock
 			public static int abs__simple_dropdown_hint = 2130903060;
 			
 			// aapt resource value: 0x7f030015
-			public static int sherlock_spinner_dropdown_item = 2130903061;
+			public static int DataFormDataField = 2130903061;
 			
 			// aapt resource value: 0x7f030016
-			public static int sherlock_spinner_item = 2130903062;
+			public static int sherlock_spinner_dropdown_item = 2130903062;
+			
+			// aapt resource value: 0x7f030017
+			public static int sherlock_spinner_item = 2130903063;
 			
 			static Layout()
 			{
@@ -1413,6 +1425,12 @@ namespace Luma.MvvmCross.ActionBarSherlock
 		
 		public partial class Styleable
 		{
+			
+			public static int[] DataFormDataField = new int[] {
+					2130772066};
+			
+			// aapt resource value: 0
+			public static int DataFormDataField_label = 0;
 			
 			public static int[] SherlockActionBar = new int[] {
 					2130771968,

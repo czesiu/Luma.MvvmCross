@@ -1,4 +1,6 @@
+using System;
 using Android.Content;
+using Android.Runtime;
 using Cirrious.MvvmCross.Binding.BindingContext;
 using Cirrious.MvvmCross.Binding.Droid.BindingContext;
 using Cirrious.MvvmCross.Droid.Views;
@@ -8,6 +10,13 @@ namespace Luma.MvvmCross.ActionBarSherlock
 {
     public abstract class MvxSherlockFragmentActivity : MvxEventSourceSherlockFragmentActivity, IMvxAndroidView
     {
+        //protected MvxSherlockFragmentActivity(IntPtr javaReference, JniHandleOwnership transfer)
+        //    : base(javaReference, transfer)
+        //{
+        //    BindingContext = new MvxAndroidBindingContext(this, this);
+        //    this.AddEventListeners();
+        //}
+
         protected MvxSherlockFragmentActivity()
         {
             BindingContext = new MvxAndroidBindingContext(this, this);

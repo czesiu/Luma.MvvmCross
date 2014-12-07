@@ -9,8 +9,8 @@
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Luma.MvvmCross.ActionBarSherlock</RootNamespace>
-    <AssemblyName>Luma.MvvmCross.ActionBarSherlock</AssemblyName>
+    <RootNamespace>Luma.MvvmCross</RootNamespace>
+    <AssemblyName>Luma.MvvmCross.Android</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
@@ -82,6 +82,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataFormDataField.cs" />
+    <Compile Include="DataFormDataFieldValueTargetBinding.cs" />
     <Compile Include="MvxEventSourceSherlockActivity.cs" />
     <Compile Include="MvxEventSourceSherlockFragmentActivity.cs" />
     <Compile Include="MvxSherlockActivity.cs" />
@@ -101,6 +103,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <AndroidResource Include="Resources\Layout\DataFormDataField.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Xamarin.ActionBarSherlock\Xamarin.ActionBarSherlock.csproj">
@@ -110,6 +115,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Values\Styles.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
