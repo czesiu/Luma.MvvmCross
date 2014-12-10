@@ -1,8 +1,9 @@
 ﻿using Android.App;
 using Android.Support.V4.Widget;
 using Android.Views;
+using Luma.MvvmCross.ActionBarSherlock.NavigationDrawer;
 
-namespace Luma.MvvmCross.ActionBarSherlock.NavigationDrawer
+namespace Luma.MvvmCross.NavigationDrawer
 {
     public class EventBasedSherlockActionBarDrawerToggle : SherlockActionBarDrawerToggle, ISherlockDrawerToggle
     {
