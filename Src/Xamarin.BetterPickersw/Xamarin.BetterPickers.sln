@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.BetterPickers", "Xamarin.BetterPickers\Xamarin.BetterPickers.csproj", "{D8C4F8A4-F31A-4E97-96DD-1215629C866A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.NineOldAndroids", "Xamarin.NineOldAndroids\Xamarin.NineOldAndroids.csproj", "{7DCB7916-F250-447D-8EE2-3468D02BC759}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{9D098CFC-2614-4A27-B65D-5B8046D59050}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8C4F8A4-F31A-4E97-96DD-1215629C866A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8C4F8A4-F31A-4E97-96DD-1215629C866A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8C4F8A4-F31A-4E97-96DD-1215629C866A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8C4F8A4-F31A-4E97-96DD-1215629C866A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DCB7916-F250-447D-8EE2-3468D02BC759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DCB7916-F250-447D-8EE2-3468D02BC759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DCB7916-F250-447D-8EE2-3468D02BC759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DCB7916-F250-447D-8EE2-3468D02BC759}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D098CFC-2614-4A27-B65D-5B8046D59050}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D098CFC-2614-4A27-B65D-5B8046D59050}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D098CFC-2614-4A27-B65D-5B8046D59050}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9D098CFC-2614-4A27-B65D-5B8046D59050}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D098CFC-2614-4A27-B65D-5B8046D59050}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D098CFC-2614-4A27-B65D-5B8046D59050}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
