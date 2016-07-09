@@ -12,10 +12,10 @@
     <RootNamespace>Xamarin.ActionBarSherlock</RootNamespace>
     <AssemblyName>Xamarin.ActionBarSherlock</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0.3</TargetFrameworkVersion>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
-    <AndroidUseLatestPlatformSdk />
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
