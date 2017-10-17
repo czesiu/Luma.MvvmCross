@@ -4,7 +4,7 @@ using Android.Graphics;
 using Android.Graphics.Drawables;
 using Android.Util;
 using Android.Views;
-using Android.Widget;
+using global::Android.Widget;
 
 namespace Xamarin.SuperListView
 {
@@ -32,7 +32,7 @@ namespace Xamarin.SuperListView
             remove { List.ItemLongClick -= value; }
         } 
 
-		public new Android.Widget.ListView List { get { return InnerList as Android.Widget.ListView; } }
+		public new global::Android.Widget.ListView List { get { return InnerList as global::Android.Widget.ListView; } }
 
         protected override void InitAttributes(IAttributeSet attrs)
 		{
@@ -50,7 +50,7 @@ namespace Xamarin.SuperListView
 
 		protected override void InitView(View view)
 		{
-			InnerList = view.FindViewById(Android.Resource.Id.List) as Android.Widget.ListView;
+			InnerList = view.FindViewById(global::Android.Resource.Id.List) as global::Android.Widget.ListView;
 
 			if (InnerList == null)
 			{
@@ -79,7 +79,7 @@ namespace Xamarin.SuperListView
 
 		public virtual void setupSwipeToDismiss(SwipeDismissListViewTouchListener.DismissCallbacks listener, bool autoRemove)
 		{
-			SwipeDismissListViewTouchListener touchListener = new SwipeDismissListViewTouchListener((Android.Widget.ListView) InnerList, new DismissCallbacksAnonymousInnerClassHelper(this, listener, autoRemove));
+			SwipeDismissListViewTouchListener touchListener = new SwipeDismissListViewTouchListener((global::Android.Widget.ListView) InnerList, new DismissCallbacksAnonymousInnerClassHelper(this, listener, autoRemove));
 			InnerList.SetOnTouchListener(touchListener);
 		}
 
@@ -102,7 +102,7 @@ namespace Xamarin.SuperListView
 				return listener.canDismiss(position);
 			}
 
-			public virtual void onDismiss(Android.Widget.ListView listView, int[] reverseSortedPositions)
+			public virtual void onDismiss(global::Android.Widget.ListView listView, int[] reverseSortedPositions)
 			{
 				if (autoRemove)
 				{

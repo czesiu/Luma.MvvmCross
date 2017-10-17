@@ -3,7 +3,7 @@ using Android.Content;
 using Android.Support.V4.Widget;
 using Android.Util;
 using Android.Views;
-using Android.Widget;
+using global::Android.Widget;
 
 namespace Xamarin.SuperListView
 {
@@ -112,10 +112,10 @@ namespace Xamarin.SuperListView
 
             var b = Context.ObtainStyledAttributes(attrs, new[]
             {
-                Android.Resource.Attribute.Divider,
-                Android.Resource.Attribute.DividerHeight,
-                Android.Resource.Attribute.ScrollbarStyle,
-                Android.Resource.Attribute.ListSelector,
+                global::Android.Resource.Attribute.Divider,
+                global::Android.Resource.Attribute.DividerHeight,
+                global::Android.Resource.Attribute.ScrollbarStyle,
+                global::Android.Resource.Attribute.ListSelector,
             });
 
             try
@@ -141,7 +141,7 @@ namespace Xamarin.SuperListView
             var view = LayoutInflater.From(Context).Inflate(SuperListViewMainLayout, this);
             RefreshLayout = view.FindViewById<SwipeRefreshLayout>(Resource.Id.ptr_layout);
 
-            ProgressView = view.FindViewById<ViewStub>(Android.Resource.Id.Progress);
+            ProgressView = view.FindViewById<ViewStub>(global::Android.Resource.Id.Progress);
 
             ProgressView.LayoutResource = _progressId;
             ProgressView.Inflate();
@@ -178,7 +178,7 @@ namespace Xamarin.SuperListView
             SetClipToPadding(_clipToPadding);
             SetOnRefreshListener(this);
             SetOnScrollListener(this);
-            SetRefreshingColorScheme(Android.Resource.Color.HoloOrangeLight, Android.Resource.Color.HoloBlueLight, Android.Resource.Color.HoloGreenLight, Android.Resource.Color.HoloRedLight);
+            SetRefreshingColorScheme(global::Android.Resource.Color.HoloOrangeLight, global::Android.Resource.Color.HoloBlueLight, global::Android.Resource.Color.HoloGreenLight, global::Android.Resource.Color.HoloRedLight);
         }
 
         public virtual void SetOnScrollListener(AbsListView.IOnScrollListener l)

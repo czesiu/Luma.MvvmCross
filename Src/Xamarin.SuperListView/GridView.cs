@@ -2,7 +2,7 @@
 using Android.Content;
 using Android.Util;
 using Android.Views;
-using Android.Widget;
+using global::Android.Widget;
 
 namespace Xamarin.SuperListView
 {
@@ -19,11 +19,11 @@ namespace Xamarin.SuperListView
         public GridView(Context context, IAttributeSet attrs, int defStyle)
             : base(context, attrs, defStyle) { }
 
-		public new Android.Widget.GridView List
+		public new global::Android.Widget.GridView List
 		{
 			get
 			{
-				return (Android.Widget.GridView) InnerList;
+				return (global::Android.Widget.GridView) InnerList;
 			}
 		}
 
@@ -56,7 +56,7 @@ namespace Xamarin.SuperListView
 
 		protected override void InitView(View view)
 		{
-            InnerList = view.FindViewById(Android.Resource.Id.List) as Android.Widget.GridView;
+            InnerList = view.FindViewById(global::Android.Resource.Id.List) as global::Android.Widget.GridView;
 
 			if (InnerList == null)
 			{

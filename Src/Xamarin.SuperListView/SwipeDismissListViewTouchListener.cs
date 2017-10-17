@@ -74,7 +74,7 @@ namespace Xamarin.SuperListView
 		private long mAnimationTime;
 
 		// Fixed properties
-		private Android.Widget.ListView mListView;
+		private global::Android.Widget.ListView mListView;
 		private DismissCallbacks mCallbacks;
 		private int mViewWidth = 1; // 1 and not 0 to prevent dividing by zero
 
@@ -106,10 +106,10 @@ namespace Xamarin.SuperListView
 			/// Called when the user has indicated they she would like to dismiss one or more list item
 			/// positions.
 			/// </summary>
-			/// <param name="listView">               The originating <seealso cref="Android.Widget.ListView"/>. </param>
+			/// <param name="listView">               The originating <seealso cref="global::global::Android.Widget.ListView"/>. </param>
 			/// <param name="reverseSortedPositions"> An array of positions to dismiss, sorted in descending
 			///                               order for convenience. </param>
-			void onDismiss(Android.Widget.ListView listView, int[] reverseSortedPositions);
+			void onDismiss(global::Android.Widget.ListView listView, int[] reverseSortedPositions);
 		}
 
 		/// <summary>
@@ -118,13 +118,13 @@ namespace Xamarin.SuperListView
 		/// <param name="listView">  The list view whose items should be dismissable. </param>
 		/// <param name="callbacks"> The callback to trigger when the user has indicated that she would like to
 		///                  dismiss one or more list items. </param>
-		public SwipeDismissListViewTouchListener(Android.Widget.ListView listView, DismissCallbacks callbacks)
+		public SwipeDismissListViewTouchListener(global::Android.Widget.ListView listView, DismissCallbacks callbacks)
 		{
 			var vc = ViewConfiguration.Get(listView.Context);
 			mSlop = vc.ScaledTouchSlop;
 			mMinFlingVelocity = vc.ScaledMinimumFlingVelocity * 16;
 			mMaxFlingVelocity = vc.ScaledMaximumFlingVelocity;
-			mAnimationTime = listView.Context.Resources.GetInteger(Android.Resource.Integer.ConfigShortAnimTime);
+			mAnimationTime = listView.Context.Resources.GetInteger(global::Android.Resource.Integer.ConfigShortAnimTime);
 			mListView = listView;
 			mCallbacks = callbacks;
 		}
@@ -248,7 +248,7 @@ namespace Xamarin.SuperListView
 					mDownY = 0;
 					mDownView = null;
 					mDownViewProxy = null;
-					mDownPosition = Android.Widget.ListView.InvalidPosition;
+					mDownPosition = global::Android.Widget.ListView.InvalidPosition;
 					mSwiping = false;
 					break;
 				}
@@ -432,7 +432,7 @@ namespace Xamarin.SuperListView
 
 					// Reset mDownPosition to avoid MotionEvent.ACTION_UP trying to start a dismiss 
 					// animation with a stale position
-					outerInstance.mDownPosition = Android.Widget.ListView.InvalidPosition;
+					outerInstance.mDownPosition = global::Android.Widget.ListView.InvalidPosition;
 
 					ViewGroup.LayoutParams lp;
 					foreach (PendingDismissData pendingDismiss in outerInstance.mPendingDismisses)
